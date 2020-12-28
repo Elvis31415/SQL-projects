@@ -1,0 +1,20 @@
+CREATE TABLE phones (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, brand TEXT, year INTEGER);
+
+INSERT INTO phones VALUES (1, "Samsung S7", 9000, "Samsung", 2016);
+INSERT INTO phones VALUES (2, "Iphone 1", 1000, "Apple", 2000);
+INSERT INTO phones VALUES (3, "Samsung S10", 90000, "Samsung", 2019);
+INSERT INTO phones VALUES (4, "Xperia", 5000, "Sony", 2015);
+INSERT INTO phones VALUES (5, "Nokia kk", 800, "Nokia", 2004);
+INSERT INTO phones VALUES (6, "Iphone 2", 2000, "Apple", 2002);
+INSERT INTO phones VALUES (7, "Samsung A16", 9000, "Samsung", 2016);
+INSERT INTO phones Values (8, "Samsung S8", 14000, "Samsung", 2018);
+INSERT INTO phones VALUES (9, "Iphone X", 100000, "Apple", 2021);
+INSERT INTO phones VALUES (10, "Samsung Z", 50000, "Samsung", 2019);
+INSERT INTO phones VALUES (11, "Iphone 3", 3000, "Apple", 2004);
+INSERT INTO phones VALUES (12, "Iphone 4", 4000, "Apple", 2006);
+INSERT INTO phones VALUES (13, "Iphone 5", 5000, "Apple", 2008);
+INSERT INTO phones VALUES (14, "Samsung S9", 17000, "Samsung", 2019);
+INSERT INTO phones VALUES (15, "Iphone 6", 6000, "Apple", 2010);
+
+SELECT * FROM phones ORDER BY price;
+SELECT brand, SUM(price) FROM phones GROUP BY brand;
