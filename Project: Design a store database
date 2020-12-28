@@ -1,0 +1,18 @@
+CREATE TABLE fruits_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, stage TEXT, species TEXT);
+INSERT INTO fruits_store VALUES(1, "Mango", 5, "ripe", "Alfonso");
+INSERT INTO fruits_store VALUES(2, "Banana", 3.5, "ripe", "Blue Java Banana");
+INSERT INTO fruits_store VALUES(7, "Banana", 4.5, "ripe", "Pisang Raja");
+INSERT INTO fruits_store VALUES(8, "Banana", 3.5, "ripe", "Plantain");
+INSERT INTO fruits_store VALUES(3, "Orange", 2, "ripe", "Mandarin");
+INSERT INTO fruits_store VALUES(4, "Orange", 3, "unripe", "Navel");
+INSERT INTO fruits_store VALUES(5, "Orange", 2.25, "ripe", "Tangerine");
+INSERT INTO fruits_store VALUES(6, "Grapes", 5.3, "ripe", "Cabernet sauvignon");
+INSERT INTO fruits_store VALUES(9, "Grapes", 4.2, "ripe", "Pinot Noir");
+INSERT INTO fruits_store VALUES(10, "Grapes", 6.5, "ripe", "Concord Grapes");
+INSERT INTO fruits_store VALUES(11, "Lemons", 1, "ripe", "Eureka Lemons");
+INSERT INTO fruits_store VALUES(12, "Lemons", 2, "ripe", "Pink Variegated");
+INSERT INTO fruits_store VALUES(13, "Lemons", 3, "ripe", "Lisbon lemon");
+INSERT INTO fruits_store VALUES(14, "Lemons", 4, "ripe", "Meyer");
+INSERT INTO fruits_store VALUES(15, "Lemons", 5, "ripe", "Primofiori");
+SELECT*FROM  fruits_store ORDER BY price;
+SELECT SUM(price) FROM fruits_store;
